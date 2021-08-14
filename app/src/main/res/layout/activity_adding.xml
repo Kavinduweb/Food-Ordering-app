@@ -13,6 +13,7 @@
         android:layout_marginTop="36dp"
         android:text="@string/add_card"
         android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.201"
         app:layout_constraintStart_toStartOf="parent"
@@ -55,6 +56,7 @@
         android:layout_width="184dp"
         android:layout_height="43dp"
         android:layout_marginTop="72dp"
+        android:background="@color/NomalOrange"
         android:text="@string/confirm_add"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.659"
@@ -121,6 +123,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="48dp"
         android:layout_marginTop="484dp"
+        android:background="@color/LowOrange"
         android:text="@string/cancel"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
