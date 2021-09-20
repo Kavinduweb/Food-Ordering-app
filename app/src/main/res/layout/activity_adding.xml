@@ -10,30 +10,34 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="40dp"
         android:text="@string/add_card"
         android:textSize="24sp"
+        android:drawableStart="@drawable/ic_baseline_add_24"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.201"
+        app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextNumber"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:id="@+id/Addnumber"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:background="@drawable/custom"
+        android:layout_marginTop="36dp"
         android:ems="10"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <EditText
-        android:id="@+id/editTextNumber4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/addexdate"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:background="@drawable/custom"
         android:layout_marginTop="12dp"
         android:ems="10"
         android:inputType="number"
@@ -42,37 +46,38 @@
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <EditText
-        android:id="@+id/editTextNumber5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/addcvv"
+        android:inputType="numberPassword"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:background="@drawable/custom"
         android:ems="10"
-        android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <Button
-        android:id="@+id/Conf_add"
-        android:layout_width="184dp"
-        android:layout_height="43dp"
-        android:layout_marginTop="72dp"
-        android:background="@color/NomalOrange"
+        android:id="@+id/conadd"
+        android:layout_width="153dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="460dp"
+        android:layout_marginEnd="36dp"
+        android:background="@drawable/rount_btn"
         android:text="@string/confirm_add"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.659"
-        app:layout_constraintStart_toEndOf="@+id/cancel"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber5" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="64dp"
         android:text="@string/card_number"
+        android:textSize="18dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.146"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Visa" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <TextView
         android:id="@+id/textView4"
@@ -80,10 +85,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:text="@string/expire_date"
+        android:textSize="18dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.141"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
+        app:layout_constraintTop_toBottomOf="@+id/Addnumber" />
 
     <TextView
         android:id="@+id/textView5"
@@ -91,40 +97,22 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:text="@string/cvv"
+        android:textSize="18dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.123"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber4" />
-
-    <RadioButton
-        android:id="@+id/Visa"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="72dp"
-        android:layout_marginTop="36dp"
-        android:text="@string/visa"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
-    <RadioButton
-        android:id="@+id/radioButton4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="104dp"
-        android:text="@string/master"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.509"
-        app:layout_constraintStart_toEndOf="@+id/Visa"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/addexdate" />
 
     <Button
         android:id="@+id/cancel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="109dp"
+        android:layout_height="48dp"
         android:layout_marginStart="48dp"
-        android:layout_marginTop="484dp"
-        android:background="@color/LowOrange"
+        android:layout_marginTop="460dp"
+        android:background="@drawable/rount_btn"
         android:text="@string/cancel"
+        app:layout_constraintEnd_toStartOf="@+id/conadd"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
