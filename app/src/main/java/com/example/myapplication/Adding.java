@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -46,25 +47,31 @@ private Context context;
         add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String num = Number.getText().toString();
-                String ex = Exdate.getText().toString();
-                String cvv = Cvv.getText().toString();
+                if (TextUtils.isEmpty(Number.getText())){
+                    Number.setError("Table Type Can't be Empty !");  Number.requestFocus();
+                }else {
+                    String num = Number.getText().toString();
+                    String ex = Exdate.getText().toString();
+                    String cvv = Cvv.getText().toString();
 
-                CardModle add = new CardModle(num,ex,cvv);
-                dbhandler.addNum(add);
-                addActivity();
+                    CardModle add = new CardModle(num, ex, cvv);
+                    dbhandler.addNum(add);
+
+                    addActivity();
+                }
+
 
             }
         });
     }
     public void cancelActivity(){
-        Intent intent = new Intent(this,MainActivity.class);
+        Intent intent = new Intent(this,PaymentHome.class);
         startActivity(intent);
     }
     public void addActivity(){
 
 
-        Intent intent = new Intent (this,MainActivity.class);
+        Intent intent = new Intent (this,PaymentHome.class);
         startActivity(intent);
     }
 

@@ -24,7 +24,7 @@ public class Delete extends AppCompatActivity {
     }
 
     public void cancelActivity(){
-        Intent intent = new Intent(this,MainActivity.class);
+        Intent intent = new Intent(this,PaymentHome.class);
         startActivity(intent);
     }
 }

@@ -12,7 +12,7 @@
         <activity android:name=".Edit"></activity>
         <activity android:name=".Delete" />
         <activity android:name=".Adding" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".PaymentHome">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

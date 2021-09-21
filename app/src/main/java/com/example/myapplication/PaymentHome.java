@@ -15,7 +15,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
+public class PaymentHome extends AppCompatActivity {
     private Button button ;
     private Button delete;
     private Button cancel;
@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.payment_main);
 
 
         button = (Button) findViewById(R.id.add_btn);
@@ -102,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
 
         }else {
             dbhandler.del();
-            Intent intent = new Intent(this, MainActivity.class);
+            Intent intent = new Intent(this, PaymentHome.class);
 
             startActivity(intent);
         }

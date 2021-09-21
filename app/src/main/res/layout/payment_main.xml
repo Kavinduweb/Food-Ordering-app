@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:visibility="visible"
-    tools:context=".MainActivity">
+    tools:context=".PaymentHome">
 
     <Button
         android:id="@+id/edit1"
@@ -36,15 +36,14 @@
         android:id="@+id/button4"
         android:layout_width="247dp"
         android:layout_height="51dp"
-        android:layout_marginTop="44dp"
-        android:background="@color/High_Orange"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/round_pay"
         android:text="@string/pay"
         android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     <Button
         android:id="@+id/add_btn"
@@ -86,6 +85,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="You added x cards "
+        android:textSize="18dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"

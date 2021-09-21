@@ -58,7 +58,7 @@ private long updatedDate;
                 CardModle cards = new CardModle(Integer.parseInt(id),Number,Ex,Cv);
                 int state = dbHandler.update(cards);
                 System.out.println(state);
-                startActivity(new Intent(context,MainActivity.class));
+                startActivity(new Intent(context,PaymentHome.class));
 
 
             }
@@ -71,7 +71,7 @@ private long updatedDate;
 
 
     public void cancelActivity(){
-        Intent intent = new Intent(this,MainActivity.class);
+        Intent intent = new Intent(this,PaymentHome.class);
         startActivity(intent);
     }
 }
