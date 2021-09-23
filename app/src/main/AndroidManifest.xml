@@ -14,7 +14,11 @@
         <activity android:name=".Delete" />
         <activity android:name=".Adding" />
         <activity android:name=".PaymentHome" />
-        <activity android:name=".Login">
+        <activity android:name=".Login"/>
+        <activity android:name=".CartListActivity"></activity>
+        <activity android:name=".ShowDetailActivity" />
+
+        <activity android:name=".IntroActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

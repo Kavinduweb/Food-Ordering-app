@@ -38,5 +38,9 @@
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
 
+    <string name="comp_name">Royal Foods</string>
+    <string name="app_des">Food Delivery App</string>
+    <string name="order_eat"><![CDATA[Order & Eat]]></string>
+
 
 </resources>

@@ -13,13 +13,13 @@ import androidx.annotation.Nullable;
 
 import java.util.List;
 
-public class Adapter extends ArrayAdapter<CardModle> {
+public class Adapter1 extends ArrayAdapter<CardModle> {
 
     private Context context;
     private int resourse;
     List<CardModle> modle;
 
-    Adapter (Context context,int resourse, List<CardModle> modle){
+    Adapter1(Context context, int resourse, List<CardModle> modle){
 
         super(context,resourse,modle);
 

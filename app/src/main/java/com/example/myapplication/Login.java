@@ -41,7 +41,7 @@ public class Login extends AppCompatActivity {
 
         if(email.getText().toString().equals("admin") && pass.getText().toString().equals("admin"))
          {
-            Intent intent = new Intent(this, PaymentHome.class);
+            Intent intent = new Intent(this, MainActivity.class);
             startActivity(intent);
 
         }

@@ -6,7 +6,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -69,10 +68,10 @@ public class PaymentHome extends AppCompatActivity {
 
         modle = dbhandler.getaallcard();
 
-        Adapter adapter = new Adapter(context,R.layout.list,modle);
+        Adapter1 adapter1 = new Adapter1(context,R.layout.list,modle);
 
 
-        list.setAdapter(adapter);
+        list.setAdapter(adapter1);
 
 
 
