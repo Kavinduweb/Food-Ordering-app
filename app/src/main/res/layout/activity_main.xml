@@ -78,7 +78,6 @@
                     android:text="Order &amp; Eat"
                     android:fontFamily="sans-serif-black"
 
-                    android:text="Order and Eat"
 
                     android:textColor="#000000"
                     android:textSize="20sp"

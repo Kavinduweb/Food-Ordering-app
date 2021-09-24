@@ -52,7 +52,7 @@ public class FeedbackMainActivity extends AppCompatActivity {
         add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(context, com.example.feedback.AddFeedBack.class));
+                startActivity(new Intent(context, com.example.myapplication.AddFeedBack.class));
             }
         });
 
