@@ -3,6 +3,7 @@ package com.example.myapplication;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
@@ -23,11 +24,25 @@ public class CartListActivity extends AppCompatActivity {
     private TextView totalFeeTxt, taxTxt, deliveryTxt, totalTxt, emptyTxt;
     private double tax;
     private ScrollView scrollView;
+            private TextView BTNCHECKOUT;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cart_list);
+        BTNCHECKOUT = findViewById(R.id.textView6);
+
+        BTNCHECKOUT.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(CartListActivity.this,com.example.myapplication.DeliveryMainActivity.class);
+                startActivity(intent);
+
+            }
+        });
+
+
 
         managementCart = new ManagementCart(this);
 
