@@ -18,12 +18,12 @@ public class DeliveryAdapterClass extends RecyclerView.Adapter<DeliveryAdapterCl
 
     List<DeliveryModelClass> delivery;
     Context context;
-    com.example.sqliteexample.DatabaseDeliveryClass databaseDeliveryClass;
+    com.example.myapplication.DatabaseDeliveryClass databaseDeliveryClass;
 
     public DeliveryAdapterClass(List<DeliveryModelClass> delivery, Context context) {
         this.delivery = delivery;
         this.context = context;
-        databaseDeliveryClass = new com.example.sqliteexample.DatabaseDeliveryClass(context);
+        databaseDeliveryClass = new com.example.myapplication.DatabaseDeliveryClass(context);
     }
 
     @NonNull
