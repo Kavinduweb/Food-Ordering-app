@@ -29,7 +29,7 @@ public class PopularAdapter extends RecyclerView.Adapter<PopularAdapter.ViewHold
         return new ViewHolder(inflate);
     }
     @Override
-    public void onBindViewHolder(@NonNull final ViewHolder holder, final int position) {
+    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         holder.title.setText(foodDomains.get(position).getTitle());
         holder.fee.setText(String.valueOf(foodDomains.get(position).getFee()));
 

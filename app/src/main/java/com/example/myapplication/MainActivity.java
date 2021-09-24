@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         floatingActionButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this,CartListActivity.class));
+                startActivity(new Intent(MainActivity.this, com.example.myapplication.CartListActivity.class));
             }
         });
 

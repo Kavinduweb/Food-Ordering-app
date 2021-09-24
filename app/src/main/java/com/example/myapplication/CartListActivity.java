@@ -50,7 +50,7 @@ public class CartListActivity extends AppCompatActivity {
         homeBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(CartListActivity.this, com.example.myapplication.MainActivity.class));
+                startActivity(new Intent(CartListActivity.this,MainActivity.class));
             }
         });
     }

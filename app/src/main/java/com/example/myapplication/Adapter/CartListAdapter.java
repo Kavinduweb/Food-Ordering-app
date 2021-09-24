@@ -36,7 +36,7 @@ private ChangeNumberItemsListner changeNumberItemsListner;
         return new ViewHolder(inflate);
     }
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, final int position) {
+    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         holder.title.setText(foodDomains.get(position).getTitle());
         holder.feeEachItem.setText(String.valueOf(foodDomains.get(position).getFee()));
         holder.totalEachItem.setText(String.valueOf(Math.round((foodDomains.get(position).getNumberInCard()*foodDomains.get(position).getFee())*100.0) / 100.0));
