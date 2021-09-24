@@ -39,7 +39,7 @@ private ManagementCart managementCart;
                 .into(picFood);
 
         titleTxt.setText(object.getTitle());
-        feeTxt.setText("$"+object.getFee());
+        feeTxt.setText("Rs."+object.getFee());
         descriptionTxt.setText(object.getDescription());
         numberOrderTxt.setText(String.valueOf(numberOrder));
 

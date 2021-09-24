@@ -18,9 +18,19 @@
         <activity android:name=".PaymentHome"/>
         <activity android:name=".ShowDetailActivity" />
         <activity android:name=".CartListActivity" />
+
         <activity android:name=".EditFeedback"/>
         <activity android:name=".FeedbackMainActivity" />
         <activity android:name=".AddFeedBack"/>
+
+
+        <activity android:name=".RequestMainActivity" />
+        <activity android:name=".ViewRequestActivity" />
+
+
+        <activity android:name=".ViewDeliveryActivity" />
+        <activity android:name=".DeliveryMainActivity"/>
+
 
         <activity android:name=".IntroActivity">
             <intent-filter>

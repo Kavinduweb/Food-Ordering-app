@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
     private void bottomNavigation() {
         FloatingActionButton floatingActionButton=findViewById(R.id.cart_btn);
         LinearLayout homeBtn=findViewById(R.id.homeBtn);
+        LinearLayout requestBtn=findViewById(R.id.requestBtn);
 
         floatingActionButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,6 +49,13 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this,MainActivity.class));
             }
         });
+
+        requestBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,RequestMainActivity.class));
+            }
+        });
     }
 
     private void recyclerViewPopular() {
@@ -57,9 +65,13 @@ public class MainActivity extends AppCompatActivity {
         recyclerViewPopularlist.setLayoutManager(linearLayoutManager);
 
         ArrayList<FoodDomain> foodlist = new ArrayList<>();
-        foodlist.add(new FoodDomain("Pepperoni pizza","pizza1","slices pepporoni, mozzerella cheese, fresh oregano, ground black pepper, pizza sause",890.25));
-        foodlist.add(new FoodDomain("Cheese Burger","burger","beef, Gouda Cheese, Special sauce, Lettuce, tomato",480.89));
-        foodlist.add(new FoodDomain("vegetable pizza","pizza2","Olive oil, Vegetable oil, pitted kalamata, cherry tomatoes, fresh oregano, basil",650.48));
+        foodlist.add(new FoodDomain("Pepperoni Pizza","pizza1","Slices Pepporoni, Mozzerella Cheese, Fresh Oregano, Ground Black Pepper, Pizza Sause",890.26));
+        foodlist.add(new FoodDomain("Cheese Burger","burger","Beef, Gouda Cheese, Special Sauce, Lettuce, Tomato",480.52));
+        foodlist.add(new FoodDomain("Vegetable Pizza","pizza2","Olive Oil, Vegetable Oil, Pitted Kalamata, Cherry Tomatoes, Fresh Oregano, Basil",650.42));
+
+        foodlist.add(new FoodDomain("Sausage HotDog","hotdog1","Sausage Made From Pork, Beef, Chicken, Turkey or Combinations Thereof and a Bun",890.26));
+        foodlist.add(new FoodDomain("Soft Drinks","sdrink1","Carbonated Water, High Fructose Corn Syrup (Sugar), Caramel Color, Caffeine, Natural Flavors",380.52));
+        foodlist.add(new FoodDomain("Creamy Doughnut","doughnut1","Milk, Eggs, Vanila, Dry Yeast, Hot Water",250.42));
 
         adapter2 = new PopularAdapter(foodlist);
         recyclerViewPopularlist.setAdapter(adapter2);
@@ -75,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
         categoryList.add(new CategoryDomain("Burger","cat_2"));
         categoryList.add(new CategoryDomain("Hotdog","cat_3"));
         categoryList.add(new CategoryDomain("Drink","cat_4"));
-        categoryList.add(new CategoryDomain("Dount","cat_5"));
+        categoryList.add(new CategoryDomain("Doughnut","cat_5"));
 
         adapter=new CategoryAdapter(categoryList);
         recyclerViewCategoryList.setAdapter(adapter);
