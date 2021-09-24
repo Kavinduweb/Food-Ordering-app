@@ -30,14 +30,14 @@ public class Adapter1 extends ArrayAdapter<CardModle> {
     }
     @NonNull
     @Override
-    public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
+    public View getView(int position1, @Nullable View convertView, @NonNull ViewGroup parent) {
 
         LayoutInflater inflater = LayoutInflater.from(context);
         View row = inflater.inflate(resourse,parent,false);
 
         TextView number =  row.findViewById(R.id.numberdis);
 
-        CardModle modles = modle.get(position);
+        CardModle modles = modle.get(position1);
         number.setText(modles.getNumber());
 
         return row;
