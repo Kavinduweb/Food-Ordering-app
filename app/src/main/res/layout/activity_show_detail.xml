@@ -20,7 +20,8 @@
                 android:id="@+id/titleTxt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="60dp"
+                android:layout_marginTop="13dp"
+                android:fontFamily="sans-serif-black"
                 android:gravity="center_horizontal"
                 android:text="Title"
                 android:textAlignment="center"
@@ -33,15 +34,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:text="$"
+                android:text="Rs."
+                android:fontFamily="sans-serif-black"
                 android:textAlignment="center"
                 android:textColor="#ff5e00"
-                android:textSize="24sp" />
+                android:textSize="22sp" />
 
             <ImageView
                 android:id="@+id/foodpic"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="322dp"
                 app:srcCompat="@drawable/pizza1" />
 
             <LinearLayout
@@ -82,6 +84,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="16dp"
+                android:fontFamily="sans-serif-black"
                 android:text="Description"
                 android:textColor="#686767"
                 android:textSize="20sp"
@@ -94,13 +97,14 @@
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_margin="16dp"
-        android:text="Add to Cart"
         android:background="@drawable/orange_button_background"
+        android:elevation="3dp"
+        android:fontFamily="sans-serif-black"
         android:gravity="center"
+        android:text="Add to Cart"
         android:textColor="#ffffff"
         android:textSize="23sp"
         android:textStyle="bold"
-        android:elevation="3dp"
         app:layout_constraintBottom_toBottomOf="@+id/scrollView3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

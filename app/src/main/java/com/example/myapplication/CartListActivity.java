@@ -96,10 +96,10 @@ private void calculateCart(){
         double total=Math.round((managementCart.getTotalFee()+tax+delivery)*100.0) / 100.0;
         double itemTotal=Math.round(managementCart.getTotalFee() * 100.0) / 100.0;
 
-        totalFeeTxt.setText("Rs"+itemTotal);
-        taxTxt.setText("Rs"+tax);
-        deliveryTxt.setText("Rs"+delivery);
-        totalTxt.setText("Rs"+total);
+        totalFeeTxt.setText("Rs."+itemTotal);
+        taxTxt.setText("Rs."+tax);
+        deliveryTxt.setText("Rs."+delivery);
+        totalTxt.setText("Rs."+total);
 }
 
     private void initView() {
