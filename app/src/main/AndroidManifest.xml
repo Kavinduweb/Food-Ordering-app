@@ -15,12 +15,12 @@
         <activity android:name=".Adding" />
         <activity android:name=".MainActivity" />
         <activity android:name=".Login"/>
-        <activity android:name=".IntroActivity"/>
+        <activity android:name=".PaymentHome"/>
         <activity android:name=".ShowDetailActivity" />
         <activity android:name=".CartListActivity" />
 
 
-        <activity android:name=".PaymentHome">
+        <activity android:name=".IntroActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

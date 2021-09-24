@@ -14,7 +14,7 @@ public class IntroActivity extends AppCompatActivity {
         setContentView(R.layout.activity_intro);
 
         ConstraintLayout startBtn = findViewById(R.id.startbtn);
-        startBtn.setOnClickListener(view -> startActivity(new Intent(IntroActivity.this, MainActivity.class)));
+        startBtn.setOnClickListener(view -> startActivity(new Intent(IntroActivity.this, Login.class)));
 
 
     }
