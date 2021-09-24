@@ -35,7 +35,10 @@ public class DeliveryMainActivity extends AppCompatActivity {
                 String stringNumber = editText_number.getText().toString();
 
                 if (stringName.length() <=0 || stringNumber.length() <=0){
+
                     Toast.makeText(DeliveryMainActivity.this, "Enter All Data", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(DeliveryMainActivity.this,com.example.myapplication.ViewDeliveryActivity.class);
+                    startActivity(intent);
                 }else {
                     DatabaseDeliveryClass databaseDeliveryClass = new DatabaseDeliveryClass(DeliveryMainActivity.this);
                     DeliveryModelClass deliveryModelClass = new DeliveryModelClass(stringName,stringAddress,stringLocation,stringNumber);

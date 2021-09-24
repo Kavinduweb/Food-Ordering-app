@@ -2,6 +2,7 @@ package com.example.myapplication;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -25,6 +26,7 @@ public class DeliveryAdapterClass extends RecyclerView.Adapter<DeliveryAdapterCl
         this.context = context;
         databaseDeliveryClass = new com.example.myapplication.DatabaseDeliveryClass(context);
     }
+    private Button PAYBTN;
 
     @NonNull
     @Override
@@ -32,6 +34,9 @@ public class DeliveryAdapterClass extends RecyclerView.Adapter<DeliveryAdapterCl
         LayoutInflater layoutInflater = LayoutInflater.from(parent.getContext());
         View view = layoutInflater.inflate(R.layout.delivery_item_list,parent,false);
         ViewDeliveryHolder viewDeliveryHolder = new ViewDeliveryHolder(view);
+
+
+
         return viewDeliveryHolder;
     }
 
