@@ -41,7 +41,7 @@ public class EditFeedback extends AppCompatActivity {
                 String message= editmessage.getText().toString();
                 FeedBack feedBack1=new FeedBack(Integer.parseInt(id),message);
                 feedbackDbHandler.updateSingleToDo(feedBack1);
-                startActivity(new Intent(context, com.example.feedback.FeedbackMainActivity.class));
+                startActivity(new Intent(context, com.example.myapplication.FeedbackMainActivity.class));
             }
         });
     }

@@ -39,7 +39,7 @@ public class AddFeedBack extends AppCompatActivity {
                 FeedBack feedBack=new FeedBack(userfeedback);
                 feedbackDbHandler.addFeedBack(feedBack);
 
-                startActivity(new Intent(context, FeedbackMainActivity.class));
+                startActivity(new Intent(context, MainActivity.class));
             }
         });
     }
