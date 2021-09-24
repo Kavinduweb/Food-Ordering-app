@@ -12,7 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class DeliveryMainActivity extends AppCompatActivity {
 
     EditText editText_name,editText_address,editText_location,editText_number;
-    Button button_add,button_view;
+    Button button_add,button_view,addcardbtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,7 +24,16 @@ public class DeliveryMainActivity extends AppCompatActivity {
         editText_number = findViewById(R.id.edittext_number);
         button_add = findViewById(R.id.button_add);
         button_view = findViewById(R.id.button_view);
+        addcardbtn = findViewById(R.id.button_addcard);
 
+        addcardbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(DeliveryMainActivity.this,PaymentHome.class);
+                startActivity(intent);
+            }
+        });
 
         button_add.setOnClickListener(new View.OnClickListener() {
             @Override
