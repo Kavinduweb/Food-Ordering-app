@@ -47,6 +47,7 @@
                     android:layout_marginLeft="40dp"
                     android:layout_marginTop="16dp"
                     android:text="Popular"
+                    android:fontFamily="sans-serif-black"
                     android:textColor="#000000"
                     android:textSize="18sp"
                     android:textStyle="bold"
@@ -61,6 +62,7 @@
                     android:layout_marginLeft="32dp"
                     android:layout_marginTop="32dp"
                     android:text="Hi Richard"
+                    android:fontFamily="sans-serif-black"
                     android:textColor="#ff3d00"
                     android:textSize="20sp"
                     android:textStyle="bold"
@@ -72,7 +74,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="@string/order_eat"
+                    android:text="Order &amp; Eat"
+                    android:fontFamily="sans-serif-black"
                     android:textColor="#000000"
                     android:textSize="20sp"
                     app:layout_constraintEnd_toEndOf="@+id/textView"
@@ -129,8 +132,8 @@
 
                     <ImageView
                         android:id="@+id/imageView2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="197dp"
+                        android:layout_height="110dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:srcCompat="@drawable/image_banner" />
@@ -139,7 +142,8 @@
                         android:id="@+id/textView4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="16dp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="sans-serif-black"
                         android:text="Free Delivery"
                         android:textColor="#000000"
                         android:textSize="20sp"
@@ -152,6 +156,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="October 2 - November 10"
+                        android:fontFamily="sans-serif-black"
                         android:textColor="#000000"
                         android:textSize="10sp"
                         app:layout_constraintEnd_toEndOf="@+id/textView4"
@@ -179,6 +184,7 @@
                             android:layout_marginRight="16dp"
                             android:layout_marginBottom="8dp"
                             android:text="Order Now"
+                            android:fontFamily="sans-serif-black"
                             android:textColor="#ffffff"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
@@ -258,6 +264,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Home"
+                        android:fontFamily="sans-serif-black"
                         android:textAlignment="center"
                         android:textColor="#676767"
                         android:textSize="12sp" />
@@ -280,6 +287,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Profile"
+                        android:fontFamily="sans-serif-black"
                         android:textAlignment="center"
                         android:textColor="#676767"
                         android:textSize="12sp" />
@@ -303,12 +311,14 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Home"
+                        android:fontFamily="sans-serif-black"
                         android:textAlignment="center"
                         android:textColor="#676767"
                         android:textSize="12sp" />
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/requestBtn"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.2"
@@ -324,7 +334,8 @@
                         android:id="@+id/textView15"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Support"
+                        android:text="Request"
+                        android:fontFamily="sans-serif-black"
                         android:textAlignment="center"
                         android:textColor="#676767"
                         android:textSize="12sp" />
@@ -346,7 +357,8 @@
                         android:id="@+id/textView11"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Settings"
+                        android:text="Feedback"
+                        android:fontFamily="sans-serif-black"
                         android:textAlignment="center"
                         android:textColor="#676767"
                         android:textSize="12sp" />
@@ -369,3 +381,4 @@
             app:tint="#ffffff" />
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
+
