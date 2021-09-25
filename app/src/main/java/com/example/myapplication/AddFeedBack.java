@@ -21,8 +21,7 @@ public class AddFeedBack extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_feed_back);
-        setTitle("Add FeedBack");
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
 
         feedbackmzg=findViewById(R.id.add_feedbackMzg);
         add=findViewById(R.id.add_button);
@@ -39,7 +38,7 @@ public class AddFeedBack extends AppCompatActivity {
                 FeedBack feedBack=new FeedBack(userfeedback);
                 feedbackDbHandler.addFeedBack(feedBack);
 
-                startActivity(new Intent(context, FeedbackMainActivity.class));
+                startActivity(new Intent(context, MainActivity.class));
             }
         });
     }

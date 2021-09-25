@@ -30,8 +30,7 @@ public class FeedbackMainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_feedback);
-        setTitle("All FeedBacks");
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
 
         add =findViewById(R.id.add);
         listView=findViewById(R.id.feedbacklist);

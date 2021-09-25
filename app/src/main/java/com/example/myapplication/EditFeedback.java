@@ -21,8 +21,7 @@ public class EditFeedback extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit_feedback);
-        setTitle("Edit FeedBack");
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
 
         context=this;
         feedbackDbHandler =new FeedbackDBHandler(context);
