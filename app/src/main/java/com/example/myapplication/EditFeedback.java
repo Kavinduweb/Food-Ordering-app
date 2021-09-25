@@ -1,14 +1,14 @@
 package com.example.myapplication;
 
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-
-import androidx.appcompat.app.AppCompatActivity;
 
 public class EditFeedback extends AppCompatActivity {
 
@@ -41,7 +41,7 @@ public class EditFeedback extends AppCompatActivity {
                 String message= editmessage.getText().toString();
                 FeedBack feedBack1=new FeedBack(Integer.parseInt(id),message);
                 feedbackDbHandler.updateSingleToDo(feedBack1);
-                startActivity(new Intent(context, com.example.myapplication.FeedbackMainActivity.class));
+                startActivity(new Intent(context, FeedbackMainActivity.class));
             }
         });
     }

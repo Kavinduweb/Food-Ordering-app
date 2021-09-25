@@ -20,8 +20,8 @@
         <activity android:name=".CartListActivity" />
 
         <activity android:name=".EditFeedback"/>
-        <activity android:name=".FeedbackMainActivity" />
-        <activity android:name=".AddFeedBack"/>
+        <activity android:name=".AddFeedBack" />
+        <activity android:name=".FeedbackMainActivity"/>
 
 
         <activity android:name=".RequestMainActivity" />
