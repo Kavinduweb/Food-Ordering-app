@@ -8,65 +8,141 @@
     tools:context=".RequestMainActivity"
     android:orientation="vertical">
 
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:text="Add Your New Request"
+        android:textColor="#FF9800"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Name"
+        android:layout_width="211dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="left"
+        android:text="Name :"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
     <EditText
         android:id="@+id/edittext_name"
-        android:layout_margin="5dp"
-        android:hint="Enter Name"
-        android:textStyle="bold"
-        android:fontFamily="sans-serif-black"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Name"
+        android:hint="Enter Name"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-black"
+        android:inputType="textPersonName|textCapWords"
+        android:padding="10dp"
+        android:background="@drawable/backgroundinput" />
+
+
+    <TextView
+        android:id="@+id/Email"
+        android:layout_width="211dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="left"
+        android:text="E-Mail :"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
 
     <EditText
         android:id="@+id/edittext_email"
-        android:layout_margin="5dp"
-        android:layout_below="@id/edittext_name"
-        android:hint="Enter E-Mail"
-        android:textStyle="bold"
-        android:fontFamily="sans-serif-black"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Name"
+        android:hint="Enter E-Mail"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-black"
+        android:inputType="textPersonName|textCapWords"
+        android:padding="10dp"
+        android:background="@drawable/backgroundinput" />
+
+    <TextView
+        android:id="@+id/Category"
+        android:layout_width="211dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="left"
+        android:text="Food Category :"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
 
     <EditText
         android:id="@+id/edittext_category"
-        android:layout_margin="5dp"
-        android:layout_below="@id/edittext_email"
-        android:hint="Enter Food Category"
-        android:textStyle="bold"
-        android:fontFamily="sans-serif-black"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Category"
+        android:hint="Enter Category"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-black"
+        android:inputType="textPersonName|textCapWords"
+        android:padding="10dp"
+        android:background="@drawable/backgroundinput" />
+
+
+    <TextView
+        android:id="@+id/Type"
+        android:layout_width="211dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="left"
+        android:text="Food Type :"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/edittext_type"
-        android:layout_margin="5dp"
-        android:layout_below="@id/edittext_category"
-        android:hint="Enter Food Type"
-        android:textStyle="bold"
-        android:fontFamily="sans-serif-black"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Category"
+        android:hint="Enter Type"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-black"
+        android:inputType="textPersonName|textCapWords"
+        android:padding="10dp"
+        android:background="@drawable/backgroundinput" />
 
     <Button
         android:id="@+id/button_add"
-        android:layout_margin="5dp"
-        android:text="Add Request"
-        android:background="#388E3C"
-        android:textStyle="bold"
-        android:fontFamily="sans-serif-black"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
         android:layout_below="@id/edittext_email"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_margin="10dp"
+        android:background="#388E3C"
+        android:fontFamily="sans-serif-black"
+        android:text="Add Request"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/button_view"
-        android:layout_margin="5dp"
+        android:layout_margin="10dp"
         android:text="View Request"
         android:textStyle="bold"
         android:background="#0288D1"
         android:fontFamily="sans-serif-black"
         android:layout_below="@id/button_add"
-        android:layout_width="match_parent"
+        android:layout_width="160dp"
         android:layout_height="wrap_content"/>
 
   </LinearLayout>

@@ -321,7 +321,6 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/requestBtn"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.2"
@@ -337,7 +336,7 @@
                         android:id="@+id/textView15"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Request"
+                        android:text="Feedback"
                         android:fontFamily="sans-serif-black"
                         android:textAlignment="center"
                         android:textColor="#676767"
@@ -345,6 +344,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/requestBtn"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.2"
@@ -360,7 +360,7 @@
                         android:id="@+id/textView11"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Feedback"
+                        android:text="Request"
                         android:fontFamily="sans-serif-black"
                         android:textAlignment="center"
                         android:textColor="#676767"
