@@ -48,7 +48,7 @@ public class FeedbackDBHandler extends SQLiteOpenHelper {
     }
 
     //add Feedback
-    public  void  addFeedBack(FeedBack feedBack){
+    public  void  addFeedBack(com.example.myapplication.FeedBack feedBack){
         SQLiteDatabase sqLiteDatabase=getWritableDatabase();
 
         ContentValues contentValues=new ContentValues();
@@ -68,9 +68,9 @@ public class FeedbackDBHandler extends SQLiteOpenHelper {
     }
 
     //get all Feedbacks
-    public List<FeedBack> getAllFeedbacks(){
+    public List<com.example.myapplication.FeedBack> getAllFeedbacks(){
 
-        List<FeedBack> feedBacks = new ArrayList();
+        List<com.example.myapplication.FeedBack> feedBacks = new ArrayList();
         SQLiteDatabase db = getReadableDatabase();
         String query = "SELECT * FROM "+TABLE_NAME;
 
@@ -79,7 +79,7 @@ public class FeedbackDBHandler extends SQLiteOpenHelper {
         if(cursor.moveToFirst()){
             do {
 
-                FeedBack feedBack = new FeedBack();
+                com.example.myapplication.FeedBack feedBack = new com.example.myapplication.FeedBack();
 
                 feedBack.setId(cursor.getInt(0));
                 feedBack.setFeedbackMzg(cursor.getString(1));
@@ -99,16 +99,16 @@ public class FeedbackDBHandler extends SQLiteOpenHelper {
         db.close();
     }
 
-    public FeedBack getSingleFeedBack(int id){
+    public com.example.myapplication.FeedBack getSingleFeedBack(int id){
         SQLiteDatabase db = getWritableDatabase();
 
         Cursor cursor = db.query(TABLE_NAME,new String[]{ID,FEEDBACK},
                 ID + "= ?",new String[]{String.valueOf(id)},null,null,null);
 
-        FeedBack feedBack;
+        com.example.myapplication.FeedBack feedBack;
         if(cursor != null){
             cursor.moveToFirst();
-            feedBack = new FeedBack(
+            feedBack = new com.example.myapplication.FeedBack(
                     cursor.getInt(0),
                     cursor.getString(1)
             );
@@ -118,7 +118,7 @@ public class FeedbackDBHandler extends SQLiteOpenHelper {
     }
 
 
-    public int updateSingleToDo(FeedBack feedBack){
+    public int updateSingleToDo(com.example.myapplication.FeedBack feedBack){
         SQLiteDatabase db = getWritableDatabase();
 
         ContentValues contentValues = new ContentValues();

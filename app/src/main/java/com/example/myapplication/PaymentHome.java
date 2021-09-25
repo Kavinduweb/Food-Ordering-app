@@ -18,7 +18,7 @@ public class PaymentHome extends AppCompatActivity {
     private Button button ;
     private Button delete;
     private Button cancel;
-    private Button edit;
+    private Button edit ,confpay;
     private Context context;
     private TextView ctext;
     private DBHandler dbhandler;
@@ -73,7 +73,14 @@ public class PaymentHome extends AppCompatActivity {
 
         list.setAdapter(adapter1);
 
-
+        confpay = findViewById(R.id.conf_pay_feed);
+        confpay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(PaymentHome.this,AddFeedBack.class);
+                startActivity(intent);
+            }
+        });
 
 
     }

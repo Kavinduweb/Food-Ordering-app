@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
         LinearLayout homeBtn=findViewById(R.id.homeBtn);
 
         LinearLayout requestBtn=findViewById(R.id.requestBtn);
+        LinearLayout feedbackbtn1=findViewById(R.id.feedbackbtn);
 
         floatingActionButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -57,6 +58,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this,RequestMainActivity.class));
+            }
+        });
+        feedbackbtn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,FeedbackMainActivity.class));
             }
         });
     }

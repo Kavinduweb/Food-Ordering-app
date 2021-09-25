@@ -13,13 +13,13 @@ import androidx.annotation.Nullable;
 
 import java.util.List;
 
-public class FeedBackAdapter extends ArrayAdapter<FeedBack> {
+public class FeedBackAdapter extends ArrayAdapter<com.example.myapplication.FeedBack> {
 
     private Context context;
     private int resource;
-    List<FeedBack> feedBacks;
+    List<com.example.myapplication.FeedBack> feedBacks;
 
-    FeedBackAdapter(Context context, int resource, List<FeedBack> feedBacks){
+    FeedBackAdapter(Context context, int resource, List<com.example.myapplication.FeedBack> feedBacks){
         super(context,resource,feedBacks);
         this.context=context;
         this.resource=resource;
@@ -36,7 +36,7 @@ public class FeedBackAdapter extends ArrayAdapter<FeedBack> {
 
 
         // feedbacks [obj1]
-        FeedBack feedBack = feedBacks.get(position);
+        com.example.myapplication.FeedBack feedBack = feedBacks.get(position);
         feedbackMsz.setText(feedBack.getFeedbackMzg());
         return row;
     }

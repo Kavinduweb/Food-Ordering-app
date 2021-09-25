@@ -39,7 +39,7 @@ public class Login extends AppCompatActivity {
     public void login(){
 
 
-        if(email.getText().toString().equals("admin") && pass.getText().toString().equals("admin"))
+        if(email.getText().toString().equals("a") && pass.getText().toString().equals("a"))
         {
             Intent intent = new Intent(this, MainActivity.class);
             startActivity(intent);

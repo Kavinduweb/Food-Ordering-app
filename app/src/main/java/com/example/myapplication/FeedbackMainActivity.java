@@ -1,6 +1,9 @@
 package com.example.myapplication;
 
 
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -11,9 +14,6 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -23,26 +23,25 @@ public class FeedbackMainActivity extends AppCompatActivity {
     private ListView listView;
     private TextView count;
     Context context;
-    private FeedbackDBHandler feedbackDbHandler;
-    private List<FeedBack> feedBacks;
+    private com.example.myapplication.FeedbackDBHandler feedbackDbHandler;
+    private List<com.example.myapplication.FeedBack> feedBacks;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        setTitle("All FeedBacks");
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        setContentView(R.layout.activity_main_feedback);
+
 
         add =findViewById(R.id.add);
         listView=findViewById(R.id.feedbacklist);
         count=findViewById(R.id.feedbackcount);
         context=this;
         feedBacks=new ArrayList<>();
-        feedbackDbHandler =new FeedbackDBHandler(this);
+        feedbackDbHandler =new com.example.myapplication.FeedbackDBHandler(this);
 
         feedBacks= feedbackDbHandler.getAllFeedbacks();
 
-        FeedBackAdapter adapter=new FeedBackAdapter(context,R.layout.singlefeedback,feedBacks);
+        com.example.myapplication.FeedBackAdapter adapter=new com.example.myapplication.FeedBackAdapter(context,R.layout.singlefeedback,feedBacks);
         listView.setAdapter(adapter);
 
         //get_feedback counts from the table
@@ -60,7 +59,7 @@ public class FeedbackMainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 
-                FeedBack feedBack = feedBacks.get(i);
+                com.example.myapplication.FeedBack feedBack = feedBacks.get(i);
 
                 AlertDialog.Builder builder =new AlertDialog.Builder(context);
                 builder.setTitle(feedBack.getFeedbackMzg());
@@ -78,7 +77,7 @@ public class FeedbackMainActivity extends AppCompatActivity {
                 builder.setNeutralButton("Update", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        Intent intent = new Intent(context,EditFeedback.class);
+                        Intent intent = new Intent(context, com.example.myapplication.EditFeedback.class);
                         intent.putExtra("id",String.valueOf(feedBack.getId()));
                         startActivity(intent);
                     }
