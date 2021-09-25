@@ -3,14 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
     android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
     tools:context=".DeliveryMainActivity">
 
     <TextView
         android:id="@+id/text_dtitle"
-        android:layout_width="match_parent"
+        android:layout_width="362dp"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:hint="Delivery Details"
@@ -26,44 +26,44 @@
 
     <EditText
         android:id="@+id/edittext_address"
-        android:layout_margin="5dp"
-        android:hint="Enter Address"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:hint="Enter Address" />
 
     <EditText
         android:id="@+id/edittext_location"
-        android:layout_margin="5dp"
-        android:hint="Enter Location"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:hint="Enter Location" />
 
     <EditText
         android:id="@+id/edittext_number"
-        android:layout_margin="5dp"
-        android:hint="Enter Number"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:hint="Enter Number" />
 
 
     <Button
-        android:textStyle="bold"
-        android:layout_margin="5dp"
         android:id="@+id/button_add"
-        android:text="Add Delivery"
-        android:background="#ff6624"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="#ff6624"
+        android:text="Add Delivery"
+        android:textStyle="bold" />
 
 
     <Button
-        android:textStyle="bold"
-        android:layout_margin="5dp"
         android:id="@+id/button_view"
-        android:text="View Delivery"
-        android:background="#ff6624"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="#ff6624"
+        android:text="View Delivery"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/button_addcard"
