@@ -30,9 +30,7 @@ public class ViewDeliveryActivity extends AppCompatActivity {
         }else {
             Toast.makeText(this, "There is no delivery details in the database", Toast.LENGTH_SHORT).show();
         }
-
-
-
+        
 
     }
 }
