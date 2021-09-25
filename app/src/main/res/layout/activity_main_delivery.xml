@@ -13,9 +13,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
+        android:hint="Delivery Details"
         android:textSize="50dp"
-        android:textStyle="bold"
-        android:hint="Delivery Details" />
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/edittext_name"
