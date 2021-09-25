@@ -30,7 +30,7 @@
 
         <activity android:name=".ViewDeliveryActivity" />
         <activity android:name=".DeliveryMainActivity"/>
-
+        <activity android:name=".UserProfile"/>
 
         <activity android:name=".IntroActivity">
             <intent-filter>

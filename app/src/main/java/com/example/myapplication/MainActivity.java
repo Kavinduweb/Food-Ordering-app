@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
     private void bottomNavigation() {
         FloatingActionButton floatingActionButton=findViewById(R.id.cart_btn);
         LinearLayout homeBtn=findViewById(R.id.homeBtn);
-
+        LinearLayout profile=findViewById(R.id.profileBtn);
         LinearLayout requestBtn=findViewById(R.id.requestBtn);
         LinearLayout feedbackbtn1=findViewById(R.id.feedbackbtn);
 
@@ -52,7 +52,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
+        profile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,UserProfile.class));
+            }
+        });
 
         requestBtn.setOnClickListener(new View.OnClickListener() {
             @Override
