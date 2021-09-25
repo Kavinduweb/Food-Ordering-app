@@ -22,7 +22,7 @@
         android:textStyle="bold"
         android:id="@+id/edittext_name"
         android:text="Name"
-        android:layout_margin="5dp"
+        android:layout_margin="10dp"
         android:textSize="18sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
@@ -32,7 +32,7 @@
         android:textStyle="bold"
         android:id="@+id/edittext_address"
         android:text="Address"
-        android:layout_margin="5dp"
+        android:layout_margin="10dp"
         android:textSize="18sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
@@ -42,7 +42,7 @@
         android:textStyle="bold"
         android:id="@+id/edittext_location"
         android:text="Location"
-        android:layout_margin="5dp"
+        android:layout_margin="10dp"
         android:textSize="18sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
@@ -52,7 +52,7 @@
         android:textStyle="bold"
         android:id="@+id/edittext_number"
         android:text="Number"
-        android:layout_margin="5dp"
+        android:layout_margin="10dp"
         android:textSize="18sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
